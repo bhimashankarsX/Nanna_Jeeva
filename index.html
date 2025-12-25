@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Love ❤️ My wife ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #e63946;
+      --secondary: #f1faee;
+      --accent: #ffb703;
+      --dark: #1d3557;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #fff0f3, #fde2e4);
+      color: #333;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    /* Cinematic fade-in */
+    section, header {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeIn 1.4s ease forwards;
+    }
+
+    section:nth-of-type(1) { animation-delay: 0.3s; }
+    section:nth-of-type(2) { animation-delay: 0.6s; }
+    section:nth-of-type(3) { animation-delay: 0.9s; }
+    section:nth-of-type(4) { animation-delay: 1.2s; }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+	
+	header {
+  position: relative;
+  overflow: hidden;
+}
+
+#hearts {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  top: -30px;
+  color: hotpink;
+  text-shadow: 0 0 12px rgba(255, 105, 180, 0.6);
+  animation: fall linear infinite, pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(120vh);
+    opacity: 0;
+  }
+}
+
+
+    header {
+	
+  position: relative;   /* 👈 ADD THIS */
+  overflow: hidden;     /* 👈 ADD THIS */
+
+	
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('background.jpg') center/cover no-repeat fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.4rem;
+      max-width: 750px;
+      margin: auto;
+      opacity: 0.95;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 12px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 100px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--primary);
+    }
+	
+.hearts {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.heart-fall {
+  position: absolute;
+  top: -20px;
+  color: rgba(255, 105, 180, 0.85);
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(120vh);
+    opacity: 0;
+  }
+}
+
+
+    .story {
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 2;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .gallery div {
+      background: white;
+      height: 200px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 0.85rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      transition: transform 0.4s ease;
+    }
+
+    .gallery div:hover {
+      transform: scale(1.05);
+    }
+
+    .video-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+    }
+
+    .video-box {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .video-box iframe {
+      width: 100%;
+      height: 230px;
+      border-radius: 12px;
+      border: none;
+    }
+	
+	.red-name {
+  color: #ff4f9a; /* romantic red */
+  font-weight: 600;
+}
+
+
+    .love-notes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .note {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      font-style: italic;
+      transition: transform 0.4s ease;
+    }
+
+    .note:hover {
+      transform: translateY(-8px);
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .heart {
+      color: var(--primary);
+      font-size: 1.6rem;
+    }
+	
+	#music-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: white;
+  color: #e63946;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  z-index: 2000;
+  transition: transform 0.3s ease;
+}
+
+#music-btn:hover {
+  transform: scale(1.1);
+}
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#story">Our Story</a>
+    <a href="#gallery">Memories</a>
+    <a href="#videos">Videos</a>
+    <a href="#notes">Love Notes</a>
+  </nav>
+
+<header>
+  <div id="hearts"></div>
+
+  <div>
+    <h1>To My Forever Love, <span class="red-name">JEEVA</span></h1>
+    <p>Just because you are special. Not today. Not sometimes. Always.</p>
+  </div>
+</header>
+
+  <section id="story">
+    <h2>Our Story</h2>
+    <div class="story">
+      <p>
+        <!-- ADD YOUR STORY HERE -->
+        We didn’t plan forever.
+We simply started with a moment.
+
+Somewhere between conversations that lasted longer than they should have,
+laughter that felt effortless,
+and silences that felt safe —
+I realized something had changed.
+
+Loving you never felt like learning something new.
+It felt like remembering something I had always known.
+
+We grew — not perfectly, not easily —
+but always together.
+Through ordinary days and unforgettable nights,
+through challenges that tested us
+and love that chose to stay.
+
+This story isn’t about how it began.
+It’s about why it continues.
+
+And if I had to live it all again —
+every moment, every version of us —
+I would still find you.
+Every single time.
+      </p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Beautiful Memories</h2>
+    <div class="gallery">
+	   <img src="1.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+	  <img src="2.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+	  <img src="3.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+	  <img src="4.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+	   <img src="5.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+	    <img src="6.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+		 <img src="7.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+		  <img src="8.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+		   <img src="9.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+		    <img src="10.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+			 <img src="11.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+			  <img src="12.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+			   <img src="13.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+			    <img src="14.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+				 <img src="15.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+				  <img src="16.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+				   <img src="17.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+				    <img src="18.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+					 <img src="19.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+					  <img src="20.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+					   <img src="21.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+					    <img src="22.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+						 <img src="23.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+						  <img src="24.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+						   <img src="25.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+						    <img src="26.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+							 <img src="27.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+							  <img src="28.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+							   <img src="29.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+      <!-- Replace these divs with <img src="your-photo.jpg" /> -->
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2>Moments in Motion</h2>
+    <div class="video-section">
+      <div class="video-box">
+        <!-- Replace src with your video link -->
+       <iframe
+  src="https://www.youtube.com/embed/iHQm1zhRLdQ&list=PLKRnjsg8L844WB8WF1jqiwqR03QOwUbFA&index=8"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+        <p>A moment I never want to forget.</p>
+      </div>
+      <div class="video-box">
+       <iframe
+  src="https://www.youtube.com/embed/g61v9c2XsDU&list=PLKRnjsg8L844WB8WF1jqiwqR03QOwUbFA&index=9"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+        <p>Every second with you feels magical.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="notes">
+    <h2>Love Notes for You</h2>
+    <div class="love-notes">
+      <div class="note">I love you not only for who you are, but for who I become when I am with you.</div>
+      <div class="note">You are my calm in chaos, my smile on hard days, my forever.</div>
+      <div class="note">Every love story is beautiful, but ours is my favorite.</div>
+      <!-- Add more notes anytime -->
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with endless love <span class="heart">♥</span> — just because you are special</p>
+  </footer>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="palpal.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="music-btn" onclick="toggleMusic()">♥</div>
+
+  <!-- Password Overlay -->
+  <div id="lock-screen">
+    <div class="lock-box">
+      <h2>Only for You</h2>
+      <p>Enter our special word</p>
+      <input type="password" id="password" placeholder="Our secret" />
+      <button onclick="unlock()">Enter</button>
+    </div>
+  </div>
+
+  <!-- Opening Quote -->
+  <div id="opening-quote">"Some loves don’t need a reason. They just exist."</div>
+
+  <!-- Love Counter -->
+  <section id="counter">
+    <h2>Every Moment With You</h2>
+    <p id="time"></p>
+  </section>
+
+  <!-- Secret Ending -->
+  <section id="secret">
+    <h2>The Last Scene</h2>
+    <p>
+      If the world ever asks me why I believe in forever,<br>
+      I will simply say your name — Ashwini.<br><br>
+
+      In your smile, I found my home.<br>
+      In your voice, my calm.<br>
+      In your heart, my entire universe.<br><br>
+
+      This is not for an occasion.<br>
+      This is for every ordinary day that becomes extraordinary because of you.<br><br>
+
+      I choose you. Still. Always. Again.
+    </p>
+  </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* 🎵 Music */
+  const music = document.getElementById('bg-music');
+  const btn = document.getElementById('music-btn');
+
+  window.toggleMusic = function () {
+    music.volume = 0.5;
+    if (music.paused) {
+      music.play().catch(() => alert("Tap once more ❤️"));
+      btn.style.background = '#e63946';
+      btn.style.color = 'white';
+    } else {
+      music.pause();
+      btn.style.background = 'white';
+      btn.style.color = '#e63946';
+    }
+  };
+
+  /* 🔐 Password */
+  window.unlock = function () {
+    const pass = document.getElementById('password').value;
+    if (pass === 'mywife') {
+      document.getElementById('lock-screen').style.display = 'none';
+    } else {
+      alert('That word belongs to us ❤️');
+    }
+  };
+
+  /* ⏳ Love Counter */
+  const startDate = new Date('2018-01-18');
+  setInterval(() => {
+    const diff = new Date() - startDate;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    document.getElementById('time').innerText =
+      days + ' days of loving you';
+  }, 1000);
+
+  /* ❤️ Falling Hearts */
+  const hearts = document.getElementById("hearts");
+
+  setInterval(() => {
+    if (!hearts) return;
+
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "♥";
+
+    heart.style.left = Math.random() * 100 + "%";
+    heart.style.fontSize = 12 + Math.random() * 24 + "px";
+    heart.style.animationDuration = 4 + Math.random() * 6 + "s";
+
+    hearts.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 10000);
+  }, 300);
+
+});
+</script>
+
+</body>
+</html>
